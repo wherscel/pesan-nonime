@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-background: rgb(27, 30, 37);
+  --violet: rgb(109, 96, 212);
+  --dark-background-el: rgb(36, 40, 49);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--body-background);
+}
+
+h1 {
+  font-weight: normal;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: var(--dark-background-el);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav.logo {
+  font-size: medium;
+}
+
+.container {
+  max-width: 950px;
+  margin: 100px auto;
+  padding: 15px 10px;
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+.sub-font {
+  color: rgb(212, 209, 209);
+}
+
+.pesan-wrap {
+  text-align: left;
+  margin-top: 30px;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  width: 100%;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.btn-pesan {
+  width: 100%;
+  margin-top: 10px;
+  background-color: lightblue;
+  transition: all 0.2s ease;
+}
+
+button.btn-pesan:hover {
+  background-color: lightskyblue;
+}
+
+input {
+  border: none;
+  border: 1px solid gray;
+  padding: 15px 70px 15px 15px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.komen-wrapper {
+  margin-top: 15px;
+  position: relative;
+}
+
+.pesan {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-pesan {
+  background-color: var(--dark-background-el);
+  text-align: left;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.balasan {
+  margin-top: 10px;
+}
+
+button.btn-komen {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: rgb(228, 247, 254);
+  border: 1px solid rgb(75, 135, 172);
+  color: rgb(75, 135, 172);
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 576px) {
+  .card {
+    padding: 30px;
+  }
+
+  .container {
+    padding: 10px 30px;
+  }
+}
