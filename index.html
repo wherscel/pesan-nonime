@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesan Anonim</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Pesan Anonim</div>
+    </nav>
+    <div class="container">
+      <div class="card" style="background-color: var(--violet)">
+        <h1>Kirim pesan tak dikenal kepada <span>Author</span></h1>
+        <div class="pesan-wrap">
+          <ul>
+            <li class="sub-font">Author tidak akan pernah tau siapa yang mengirim pesan ini</li>
+          </ul>
+          <form action="">
+            <textarea name="" class="pesan-user" cols="" rows="5" placeholder="Tuliskan pesan secara rahasia..."></textarea>
+            <button type="button" class="btn-pesan">Ajukan</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="feedBack-wrap">
+        <div class="card card-pesan">
+          <span style="color: rgb(53, 148, 214)">Lihat Detail</span>
+          <p class="pesan">Contohnya seperti ini</p>
+          <div class="balasan sub-font"></div>
+          <form action="">
+            <div class="komen-wrapper">
+              <input type="text" placeholder="Tulis Komen" id="komentar" autocomplete="off" />
+              <button type="button" class="btn-komen">Kirim</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="public/js/script.js"></script>
+  </body>
+</html>
